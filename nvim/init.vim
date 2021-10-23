@@ -51,6 +51,11 @@ call plug#begin('~/.config/nvim/plugged')
 		\ { 'do': { -> fzf#install() } } 			" Fuzzy finder 
 	Plug 'junegunn/fzf.vim'
 
+" Code syntax highlight
+	Plug 'yuezk/vim-js' 							" Javascript
+	Plug 'MaxMEllon/vim-jsx-pretty' 				" JSX/React
+	Plug 'jackguo380/vim-lsp-cxx-highlight'			" C++ syntax
+
 " Code intellisense
 	Plug 'neoclide/coc.nvim', {'branch': 'release'} " Language server 
 	Plug 'jiangmiao/auto-pairs'
